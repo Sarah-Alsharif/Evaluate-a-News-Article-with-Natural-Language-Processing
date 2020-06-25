@@ -1,0 +1,22 @@
+$green-color : #399252;
+$orange-color :#E78200;
+$white-color: white;
+$font-style:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$size: 30px;
+
+
+header {
+
+   display: flex;
+   justify-content: center;
+
+    #title {
+         margin-top: 20px;
+         color: $white-color ;
+         font-size: $size;
+         text-align: center;
+        font-family: $font-style  ; 
+    } 
+    
+
+}

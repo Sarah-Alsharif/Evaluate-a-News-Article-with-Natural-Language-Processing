@@ -1,0 +1,39 @@
+$green-color: #399252;
+$lightBlue-color: #B3DBE3;
+
+
+.contact-style{
+    background-color: $lightBlue-color;
+    margin-top: 40px;
+
+    footer{
+        margin-bottom: 20px;
+        font-size: 25px;
+        padding-top: 20px;
+
+        .social{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+    }
+
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

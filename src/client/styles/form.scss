@@ -1,0 +1,46 @@
+$orange-color :#E78200;
+$green-Color:#399252;
+$white-color: white;
+$lightBlue-color: #B3DBE3;
+
+
+main{
+   margin: 20px;
+   margin-top: 60px;
+   border: 1px solid $lightBlue-color;
+   background-color: $lightBlue-color ;
+
+    .myform{
+      display: flex;
+      flex-direction: column;
+    }
+  
+}
+
+  
+.myform {
+
+   #text{
+      align-self: center;
+      justify-self: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      box-shadow: 10px 10px 10px;
+      height: 150px;
+      width: 80%;
+  }
+
+  #submit{
+      width: 80%;
+      font-size: 20px;
+      align-self: center;
+      justify-self: center;
+      background-color: $green-Color;
+      color: $white-color;
+
+      &:hover{
+         background-color: $orange-color;
+      }
+
+  }
+}

@@ -1,0 +1,17 @@
+$align: justify;
+$white-color : white;
+$bold-style: bold;
+
+
+    .definition 
+    {
+        text-align: $align;
+        font-style: $bold-style;
+        color:$white-color;
+        margin-top: 20px;
+        font-size: 23px;
+        line-height: 30px;
+      
+    }
+        
+    
