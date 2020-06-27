@@ -40,6 +40,32 @@ const textapi = new aylien({
 });
 
 
+app.post('/analysis' , getText);  
+
+function getText(req,res){
+
+  textapi.sentiment(
+    {
+      text: `${req.body.value}`,
+  
+    },
+
+    function(error, response){
+      if(error === null){
+        res.send(response)
+      }
+
+      else{
+        res.send(error);
+        console.log(error)
+      }
+    }
+   
+  )
+
+}
+
+
 //
 /*app.post('/analysis', function(req, res){
 
@@ -67,54 +93,3 @@ textapi.sentiment(
 
 );
 });*/
-
-
-app.post('/analysis' , getText);  
-
-function getText(req,res){
-
-//const text = req.body;
-  //res.send(text)
-  //console.log(text);
-  textapi.sentiment(
-    {
-      text: `${req.body.value}`,
-  
-    },
-
-    function(error, response){
-      if(error === null){
-        res.send(response)
-      }
-
-      else{
-        res.send(error);
-        console.log(error)
-      }
-    }
-   
-  )
-
-}
-
-
-
-
-
-
-
-  
-
-         
-
-
-
-
-
-
-
-
-
-    
-
-
